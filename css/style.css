@@ -135,7 +135,7 @@ button:hover{
         
         background: url(../img/bg-mobile.svg);
         background-repeat: no-repeat;
-        background-position: bottom bottom;
+        background-position: 80% ;
         background-size: cover;
         background-color: var(--purple);
     }
