@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainsource:'Poppins', sans-serif;
+    --secondarysource:'Open Sans', sans-serif;
+    --purple:#684BB1;
+    --white: #fff;
+    --purple-ligth:#E880E8;
+}
+body{
+    background: url(../img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--purple);
+    
+}
+.content{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+h1{
+    font-family: var(--mainsource);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+p{
+    font-family: var(--secondarysource);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--white);
+}
+/* header */
+.header{
+    margin: 34px 0 30px 40px;
+}
+.logo{
+    width: 250px;
+    height: 42px;
+}
+.content-community{
+    display: flex;
+    gap: 60px;
+}
+.image img{
+    width: 630px;
+}
+button{
+    padding: 14px 64px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    background: var(--white);
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+    border-radius: 28px;
+    border: none;
+    margin-top: 24px;
+    color: var(--purple);
+}
+button:hover{
+    background: var(--purple-ligth);
+    cursor: pointer;
+    color: var(--white);
+} 
+.redes{
+    display: flex;
+    column-gap: 16px;
+    justify-content: flex-end;
+}
+.rd-social{
+    width: 40px;
+    height: 40px;
+}
+.rd-social:hover{
+    cursor: pointer;
+    filter: invert(50%) sepia(25%) saturate(4667%) hue-rotate(295deg) brightness(103%) contrast(101%);
+}
+
+
+
+@media screen and (max-width: 1084px) {
+    .content-community{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        margin: -30px 0 10px 0;
+    }
+    .information{
+       text-align: center;
+    }
+    button{
+        margin: 20px 0 60px 0;
+        padding: 12px 75px;
+    }
+    .redes{
+        justify-content: center;
+        text-align: center;
+    }
+}
+  
+  @media screen and (max-width: 833px) {
+    .image img{
+        width: 279px;
+    }
+    h1{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .logo{
+        width: 170px;
+        height: 32px;
+        margin: 38px 0 74px 0;
+    }
+    .rd-social{
+        width: 28px;
+        height: 28px;
+        margin-bottom: 30px;
+    }
+    
+    body{
+        
+        background: url(../img/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: bottom bottom;
+        background-size: cover;
+        background-color: var(--purple);
+    }
+    .content{
+        width: 95%;
+        margin: 0 auto;
+    }
+  }
